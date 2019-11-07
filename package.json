@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./index.js"
+    "pretest.disabled": "npm i",
+    "test": "node ./index.js",
+    "build": "docker build . -t daggerok/node-persist-async-await"
   },
   "keywords": [],
   "author": "",

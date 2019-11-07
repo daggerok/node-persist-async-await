@@ -6,4 +6,4 @@ async function main() {
     console.log(await store.defaultInstance.getItem('ololo'));
 }
 
-main().then(r => console.log('done!'));
+main().then(r => console.log('Done!'));
