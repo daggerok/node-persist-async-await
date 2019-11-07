@@ -1,0 +1,29 @@
+notifications:
+  email: false
+git:
+  quiet: true
+  depth: false
+language: node
+node_js: lts/*
+python: 3.7
+matrix:
+  include:
+    - python: 3.7
+addons:
+  apt:
+    update: false
+    packages:
+      - jq
+install: true
+jobs:
+  include:
+    - stage: test
+      script:
+        - npm i
+        - npm t
+        - cat ./.node-persist/storage/* | jq '.'
+cache:
+  npm: true
+  directories:
+    - node_modules
+    - ~/.n*

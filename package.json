@@ -1,0 +1,16 @@
+{
+  "name": "node-persist-async-await",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "12.12.6",
+    "node-persist": "3.0.5"
+  }
+}
